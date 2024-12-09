@@ -1,7 +1,15 @@
 {
   "name": "zephyrvault",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "ZephyrVault is a secure, blazing-fast, and feature-rich note-taking app with encryption and collaboration built using SvelteKit.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lzif/zephyrvault.git"
+  },
+  "author": "Luki Zainur <lukyfriendly@gmail.com>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -27,5 +35,9 @@
     "@xata.io/kysely": "^0.2.1",
     "better-auth": "^1.0.14",
     "kysely": "^0.27.5"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
   }
 }
