@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Ryuki-Kazuchi-s-workspace-gko5ru.us-east-1.xata.sh/db/ZephyrVault",
+  "codegen": {
+    "output": "src/lib/server/db/xata.ts"
+  }
+}

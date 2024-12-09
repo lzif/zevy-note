@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_71456d2391d699",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE \"user\" (id varchar PRIMARY KEY, name varchar NOT NULL, email varchar NOT NULL, email_verified boolean DEFAULT false, image varchar, created_at timestamp DEFAULT current_timestamp, updated_at timestamp DEFAULT current_timestamp)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_71456d2391d699",
+  "parent": "mig_ctb7hmo59c6lfk0t66mg",
+  "schema": "public",
+  "startedAt": "2024-12-09T04:59:00.915514Z"
+}
