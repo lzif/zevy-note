@@ -1,6 +1,12 @@
 <script lang="ts">
-	import '../app.css';
+	import Footer from '$lib/ui/Footer.svelte';
+import Header from '$lib/ui/Header.svelte';
+import '../app.css';
 	let { children } = $props();
 </script>
 
+<Header/>
+
 {@render children()}
+
+<Footer/>
