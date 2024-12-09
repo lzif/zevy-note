@@ -14,6 +14,12 @@ Whether you’re a student, creative professional, or part of a team, **ZephyrVa
 - Tag, organize, and search notes with **lightning-fast full-text search**.
 - Sync across devices with **secure cloud integration**.
 
+### 🔒 **Secure Notes**
+
+- Create **encrypted notes** with a unique password that never leaves your device.
+- Secure shared notes with **password protection** (for public, link, or specific users).
+- Use **zero-knowledge encryption** for maximum privacy.
+
 ### 🤝 **Seamless Collaboration**
 
 - Work with your team in **real-time**, no matter where they are.
@@ -37,6 +43,37 @@ Whether you’re a student, creative professional, or part of a team, **ZephyrVa
 - Organize notes into **folders, projects, or themes**.
 - Utilize **nested, color-coded tags** for quick access.
 - Smart suggestions powered by **AI** for auto-tagging and folder organization.
+
+---
+
+## 🔐 **Privacy and Security**
+
+### **Standard Notes**
+
+- Notes can be shared as:
+  - **Public:** Accessible by anyone.
+  - **Link-Only:** Accessible via a private link.
+  - **Selected Users:** Restricted to invited collaborators.
+  - **Private:** Accessible only to the creator.
+- Optional **password protection** for shared notes ensures only authorized users can view them.
+- Notes shared with editing permissions track changes with **version history** for rollback.
+
+### **Encrypted Notes**
+
+- Encrypted notes are protected with a password **different from the account password**.
+- The password is stored temporarily in **sessionStorage** (not in server or local storage).
+- Notes are encrypted and decrypted on the user's device using **AES-256 encryption**.
+- Encrypted notes can be shared but require the same password for access. Passwords must be shared manually.
+
+### **Data Security**
+
+- All data is transmitted securely over **TLS/HTTPS**.
+- Server stores:
+  - **Standard notes:** Stored as plaintext but secured with optional password protection.
+  - **Encrypted notes:** Stored in fully encrypted form (zero-knowledge).
+- Passwords for notes are hashed using secure algorithms like **Argon2** or **PBKDF2**.
+
+For more details, see [SECURITY.md](./SECURITY.md).
 
 ---
 
@@ -86,7 +123,7 @@ Before installing, ensure you have:
 
 ## 🎯 **Roadmap**
 
-### **Phase 1: Foundation**
+### **Phase 1: Core Features**
 
 - [ ] Text-based notes with **tagging and search**.
 - [ ] Markdown editor with **live preview**.
@@ -145,6 +182,5 @@ Join us in reshaping how ideas are captured and shared. Let your creativity soar
 Have questions, suggestions, or bug reports?
 
 - Open an issue in this repository.
-<!-- - Reach out to us at [support@zephyrvault.com](mailto:support@zephyrvault.com).  -->
 
 Together, let’s redefine note-taking. 🚀
