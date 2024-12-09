@@ -76,24 +76,24 @@ Before installing, ensure you have:
 ## 🎯 **Roadmap**  
 
 ### **Phase 1: Foundation**  
-- Text-based notes with **tagging and search**.  
-- Markdown editor with **live preview**.  
+- [ ] Text-based notes with **tagging and search**.  
+- [ ] Markdown editor with **live preview**.  
 
 ### **Phase 2: Multi-Format Notes**  
-- Add support for **audio and image notes**.  
-- Enable **secure cloud synchronization**.  
+- [ ] Add support for **audio and image notes**.  
+- [ ] Enable **secure cloud synchronization**.  
 
 ### **Phase 3: Collaboration**  
-- Integrate **real-time editing** with access controls.  
-- Implement advanced **version tracking**.  
+- [ ] Integrate **real-time editing** with access controls.  
+- [ ] Implement advanced **version tracking**.  
 
 ### **Phase 4: Visual Tools**  
-- Add **mind mapping** and **diagram creation**.  
-- Launch **drawing templates** for brainstorming sessions.  
+- [ ] Add **mind mapping** and **diagram creation**.  
+- [ ] Launch **drawing templates** for brainstorming sessions.  
 
 ### **Phase 5: AI & Automation**  
-- Automate tagging and folder organization with **AI suggestions**.  
-- Optimize search with **natural language processing**.  
+- [ ] Automate tagging and folder organization with **AI suggestions**.  
+- [ ] Optimize search with **natural language processing**.  
 
 ---
 
