@@ -1,18 +1,18 @@
 {
-  "done": true,
-  "migration": {
-    "name": "sql_f1f1fcaf41b259",
-    "operations": [
-      {
-        "sql": {
-          "up": "CREATE TABLE verification (id varchar PRIMARY KEY, identifier varchar NOT NULL, value varchar NOT NULL, expires_at timestamp NOT NULL, created_at timestamp DEFAULT current_timestamp, updated_at timestamp DEFAULT current_timestamp)"
-        }
-      }
-    ]
-  },
-  "migrationType": "inferred",
-  "name": "sql_f1f1fcaf41b259",
-  "parent": "sql_3856c7150362bf",
-  "schema": "public",
-  "startedAt": "2024-12-09T05:02:35.154202Z"
+	"done": true,
+	"migration": {
+		"name": "sql_f1f1fcaf41b259",
+		"operations": [
+			{
+				"sql": {
+					"up": "CREATE TABLE verification (id varchar PRIMARY KEY, identifier varchar NOT NULL, value varchar NOT NULL, expires_at timestamp NOT NULL, created_at timestamp DEFAULT current_timestamp, updated_at timestamp DEFAULT current_timestamp)"
+				}
+			}
+		]
+	},
+	"migrationType": "inferred",
+	"name": "sql_f1f1fcaf41b259",
+	"parent": "sql_3856c7150362bf",
+	"schema": "public",
+	"startedAt": "2024-12-09T05:02:35.154202Z"
 }

@@ -1,18 +1,18 @@
 {
-  "done": true,
-  "migration": {
-    "name": "sql_853a0b6b3116b2",
-    "operations": [
-      {
-        "sql": {
-          "up": "CREATE TABLE session (id varchar PRIMARY KEY, user_id varchar NOT NULL, token varchar NOT NULL, expires_at timestamp NOT NULL, ip_address varchar, user_agent varchar, created_at timestamp DEFAULT current_timestamp, updated_at timestamp DEFAULT current_timestamp, FOREIGN KEY (user_id) REFERENCES \"user\" (id) ON DELETE CASCADE)"
-        }
-      }
-    ]
-  },
-  "migrationType": "inferred",
-  "name": "sql_853a0b6b3116b2",
-  "parent": "sql_71456d2391d699",
-  "schema": "public",
-  "startedAt": "2024-12-09T04:59:01.385863Z"
+	"done": true,
+	"migration": {
+		"name": "sql_853a0b6b3116b2",
+		"operations": [
+			{
+				"sql": {
+					"up": "CREATE TABLE session (id varchar PRIMARY KEY, user_id varchar NOT NULL, token varchar NOT NULL, expires_at timestamp NOT NULL, ip_address varchar, user_agent varchar, created_at timestamp DEFAULT current_timestamp, updated_at timestamp DEFAULT current_timestamp, FOREIGN KEY (user_id) REFERENCES \"user\" (id) ON DELETE CASCADE)"
+				}
+			}
+		]
+	},
+	"migrationType": "inferred",
+	"name": "sql_853a0b6b3116b2",
+	"parent": "sql_71456d2391d699",
+	"schema": "public",
+	"startedAt": "2024-12-09T04:59:01.385863Z"
 }

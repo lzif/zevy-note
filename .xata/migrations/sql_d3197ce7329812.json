@@ -1,18 +1,18 @@
 {
-  "done": true,
-  "migration": {
-    "name": "sql_d3197ce7329812",
-    "operations": [
-      {
-        "sql": {
-          "up": "CREATE TABLE \"user\" (id varchar(255) PRIMARY KEY, name varchar(255), email varchar(255), emailverified boolean, image varchar(255), createdat timestamp, updatedat timestamp)"
-        }
-      }
-    ]
-  },
-  "migrationType": "inferred",
-  "name": "sql_d3197ce7329812",
-  "parent": "mig_ctb7ejg59c6lfk0t66lg",
-  "schema": "public",
-  "startedAt": "2024-12-09T04:52:58.144877Z"
+	"done": true,
+	"migration": {
+		"name": "sql_d3197ce7329812",
+		"operations": [
+			{
+				"sql": {
+					"up": "CREATE TABLE \"user\" (id varchar(255) PRIMARY KEY, name varchar(255), email varchar(255), emailverified boolean, image varchar(255), createdat timestamp, updatedat timestamp)"
+				}
+			}
+		]
+	},
+	"migrationType": "inferred",
+	"name": "sql_d3197ce7329812",
+	"parent": "mig_ctb7ejg59c6lfk0t66lg",
+	"schema": "public",
+	"startedAt": "2024-12-09T04:52:58.144877Z"
 }
