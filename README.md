@@ -1,6 +1,6 @@
 # **ZephyrVault**
 
-**ZephyrVault** is your ultimate note-taking and idea management platform. Combining **lightweight performance** and **uncompromising security**, it’s designed to help you capture, organize, and collaborate on your ideas—anytime, anywhere.
+**ZephyrVault** is your ultimate note-taking and idea management platform. Combining **lightweight performance**, **uncompromising security**, and **offline-first support**, it’s designed to help you capture, organize, and collaborate on your ideas—anytime, anywhere.
 
 Whether you’re a student, creative professional, or part of a team, **ZephyrVault** lets your ideas flow freely while staying securely locked in your personal vault.
 
@@ -13,6 +13,7 @@ Whether you’re a student, creative professional, or part of a team, **ZephyrVa
 - Capture notes in **text, audio, or image** formats.
 - Tag, organize, and search notes with **lightning-fast full-text search**.
 - Sync across devices with **secure cloud integration**.
+- **Offline-first support**: Access and edit your notes even without an internet connection.
 
 ### 🔒 **Secure Notes**
 
@@ -118,35 +119,36 @@ Before installing, ensure you have:
 - **Database**: PostgreSQL for structured data + Object Storage for multimedia files
 - **Real-Time Collaboration**: WebSockets
 - **Cloud Sync**: Firebase
+- **Offline-First Support**: Service Workers, IndexedDB
 
 ---
 
 ## 🎯 **Roadmap**
 
 ### **Phase 1: Core Features**
+- Text-based notes with tagging and search.
+- Markdown editor with live preview.
 
-- [ ] Text-based notes with **tagging and search**.
-- [ ] Markdown editor with **live preview**.
+### **Phase 2: Offline-First Support**
+- Implement **offline-first functionality** using Service Workers and IndexedDB.
+- Allow users to create, edit, and view notes without an internet connection.
+- Sync changes automatically when the connection is restored.
 
-### **Phase 2: Multi-Format Notes**
+### **Phase 3: Multi-Format Notes**
+- Add support for **audio and image notes**.
+- Enable **secure cloud synchronization**.
 
-- [ ] Add support for **audio and image notes**.
-- [ ] Enable **secure cloud synchronization**.
+### **Phase 4: Collaboration**
+- Integrate **real-time editing** with access controls.
+- Implement advanced **version tracking**.
 
-### **Phase 3: Collaboration**
+### **Phase 5: Visual Tools**
+- Add **mind mapping** and **diagram creation**.
+- Launch **drawing templates** for brainstorming sessions.
 
-- [ ] Integrate **real-time editing** with access controls.
-- [ ] Implement advanced **version tracking**.
-
-### **Phase 4: Visual Tools**
-
-- [ ] Add **mind mapping** and **diagram creation**.
-- [ ] Launch **drawing templates** for brainstorming sessions.
-
-### **Phase 5: AI & Automation**
-
-- [ ] Automate tagging and folder organization with **AI suggestions**.
-- [ ] Optimize search with **natural language processing**.
+### **Phase 6: AI & Automation**
+- Automate tagging and folder organization with **AI suggestions**.
+- Optimize search with **natural language processing**.
 
 ---
 
@@ -172,6 +174,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 - **Unified Platform**: Text, visual, and collaborative tools in one place.
 - **Privacy First**: Your ideas are secure, always.
 - **Open Source**: Accessible, community-driven, and transparent.
+- **Offline-First Support**: Access and edit your notes anytime, anywhere, even without an internet connection.
 
 Join us in reshaping how ideas are captured and shared. Let your creativity soar with ZephyrVault.
 
