@@ -3,7 +3,10 @@ import db from "../db";
 import { username } from "better-auth/plugins";
 
 const auth = betterAuth({
-  database: db,
+  database: {
+    db: db,
+    dialect: "postgres"
+  },
   emailAndPassword: {
     enabled: true,
   },
