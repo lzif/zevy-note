@@ -1,49 +1,62 @@
 # **ZephyrVault**
 
-**ZephyrVault** is your ultimate note-taking and idea management platform. Combining **lightweight performance**, **uncompromising security**, and **offline-first support**, it’s designed to help you capture, organize, and collaborate on your ideas—anytime, anywhere.
-
-Whether you’re a student, creative professional, or part of a team, **ZephyrVault** lets your ideas flow freely while staying securely locked in your personal vault.
+**ZephyrVault** is your ultimate note-taking platform—**offline-first**, secure, and designed for productivity. Whether you’re a student, creative, or developer, your ideas flow freely while staying locked in your vault.
 
 ---
 
 ## ✨ **Features**
 
-### 📝 **Effortless Note-Taking**
+### 📝 **Note-Taking & Organization**
 
-- Capture notes in **text, audio, or image** formats.
-- Tag, organize, and search notes with **lightning-fast full-text search**.
-- Sync across devices with **secure cloud integration**.
-- **Offline-first support**: Access and edit your notes even without an internet connection.
+- Create notes in **text, audio, or image** formats.
+- Organize with **tags**, **folders**, and smart search.
+- Utilize **nested, color-coded tags** for quick access.
+- Benefit from **AI-suggested tags** and folder organization.
+- **Markdown-ready** with live preview and export to **Markdown, PDF, JSON, or HTML**.
 
-### 🔒 **Secure Notes**
+### 🔐 **Security & Privacy**
 
-- Create **encrypted notes** with a unique password that never leaves your device.
-- Secure shared notes with **password protection** (for public, link, or specific users).
-- Use **zero-knowledge encryption** for maximum privacy.
+- **Zero-knowledge encryption** for ultimate privacy.
+- Secure your notes with **AES-256 encryption** and custom passwords.
+- Create encrypted notes using a unique password that never leaves your device.
+- Perform **secure searches** in encrypted notes using **SSE**.
+- Secure shared notes with **password protection** for public, link, or specific users.
 
-### 🤝 **Seamless Collaboration**
+### 🔗 **API Integration & Automation**
+
+- Integrate ZephyrVault into your workflow with a **public API**.
+- Automate note creation, updates, and bulk exports programmatically.
+
+### 🎨 **Customization & Themes**
+
+- Switch between pre-built **light** or **dark modes**.
+- Use **AI-powered recommendations** for custom themes tailored to your usage.
+
+### 🤖 **AI-Powered Productivity**
+
+- Generate **automatic summaries** of long notes using AI.
+
+### 🗂️ **Backup & Export**
+
+- **Auto-backup** your notes locally or to cloud storage of your choice.
+- Export individual or bulk notes in **Markdown, JSON**, or **PDF** formats.
+
+### 🤝 **Collaboration Tools**
 
 - Work with your team in **real-time**, no matter where they are.
 - Manage permissions with **view-only or editor roles**.
 - Revert changes anytime with **version control**.
 
-### 💡 **Markdown-Ready**
-
-- Write and structure content using **Markdown syntax**.
-- See live previews while editing.
-- Export your notes as **Markdown, HTML, or PDF**.
-
-### 🎨 **Visual Creativity Unleashed**
+### 🎨 **Visual Creativity Tools**
 
 - Design **diagrams**, **mind maps**, and **sketches** with intuitive tools.
 - Use pre-designed **templates** for brainstorming or planning.
 - Free your imagination with a **drawing canvas**.
 
-### 📂 **Advanced Organization Tools**
+### 🌐 **Sync & Offline Support**
 
-- Organize notes into **folders, projects, or themes**.
-- Utilize **nested, color-coded tags** for quick access.
-- Smart suggestions powered by **AI** for auto-tagging and folder organization.
+- Sync across devices with **secure cloud integration**.
+- **Offline-first support**: Access and edit your notes even without an internet connection.
 
 ---
 
@@ -81,136 +94,47 @@ For more details, see [SECURITY.md](./SECURITY.md).
 ## 🚀 **Getting Started**
 
 ### **Prerequisites**
-
-Before installing, ensure you have:
-
-- **Node.js** (v16 or later)
+- **Node.js** (v20+)
 - **PNPM**
 
 ### **Installation**
-
-1. Clone the repository:
-
+1. Clone the repository:  
    ```bash
    git clone https://github.com/lzif/zephyrvault.git
    cd zephyrvault
    ```
-
-2. Install the dependencies:
-
+2. Install dependencies:  
    ```bash
    pnpm install
    ```
-
-3. Start the development server:
-
+3. Run the development server:  
    ```bash
    pnpm run dev
    ```
-
-4. Open your browser and navigate to `http://localhost:5173`.
+4. Open [http://localhost:5173](http://localhost:5173).
 
 ---
 
 ## 🛠️ **Tech Stack**
-
-- **Frontend**: Svelte, Tailwind CSS
-- **Backend**: SvelteKit, Node.js
-- **Database**: PostgreSQL for structured data + Object Storage for multimedia files
-- **Real-Time Collaboration**: WebSockets
-- **Cloud Sync**: Firebase
-- **Offline-First Support**: Service Workers, IndexedDB
-
----
-
-## 🎯 **Roadmap**
-
-### **Phase 1: Core Functionality**
-
-- Launch basic note-taking features, including text-based notes with tagging and full-text search.
-- Add **Markdown editor** with live preview.
-- Ensure secure storage for **standard notes**.
-
-### **Phase 2: Offline-First Support**
-
-- Implement **Service Workers** and **IndexedDB** to enable offline note creation, editing, and viewing.
-- Develop automatic sync to cloud storage when reconnected to the internet.
-- Enhance user experience with seamless offline-to-online transitions.
-
-### **Phase 3: Security Enhancements**
-
-- Integrate **AES-256 encryption** for encrypted notes with zero-knowledge security.
-- Allow secure note sharing with password protection for public and private access.
-- Implement **Argon2/PBKDF2 hashing** for storing note passwords.
-
-### **Phase 4: Multi-Format Notes**
-
-- Add support for **audio** and **image-based notes** with tagging and search.
-- Expand cloud sync capabilities to support multimedia files securely.
-
-### **Phase 5: Collaboration Tools**
-
-- Enable **real-time collaboration** with roles such as viewer and editor.
-- Develop **version control** for tracking and reverting changes.
-- Enhance team workflows with shared project folders.
-
-### **Phase 6: Advanced Organization Tools**
-
-- Introduce **AI-powered smart suggestions** for tags and folder organization.
-- Add **nested, color-coded tags** for better note categorization.
-- Optimize **natural language processing** for intelligent search capabilities.
-
-### **Phase 7: Visual Creativity & Productivity**
-
-- Release tools for **mind mapping**, **diagrams**, and **drawing canvas**.
-- Provide customizable **brainstorming templates** for planning sessions.
-- Enhance integration between visual tools and text notes.
-
-### **Phase 8: Privacy & Sharing Upgrades**
-
-- Improve data sharing with **link-only** and **user-restricted access** options.
-- Develop encrypted note sharing requiring manual password exchange.
-- Refine access controls for granular permissions.
-
-### **Phase 9: AI & Automation**
-
-- Automate repetitive tasks like tagging, folder management, and note summaries using **AI suggestions**.
-- Personalize recommendations and improve collaboration insights with **machine learning models**.
-
----
-
-## 🧑‍💻 **Contributing**
-
-We’re excited to grow ZephyrVault with your help! Follow these steps to contribute:
-
-1. Fork the repository and create a new branch.
-2. Implement your changes and test them thoroughly.
-3. Submit a pull request with a detailed explanation of your changes.
+- **Frontend**: Svelte, Tailwind CSS  
+- **Backend**: SvelteKit, Node.js  
+- **Database**: PostgreSQL + Object Storage  
+- **Offline-First**: Service Workers, IndexedDB  
+- **Real-Time**: WebSockets  
+- **AI Tools**: Lightweight local models  
 
 ---
 
 ## 📜 **License**
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
-
----
-
-## 🌟 **Why Choose ZephyrVault?**
-
-- **Effortless Performance**: Built with Svelte for speed and simplicity.
-- **Unified Platform**: Text, visual, and collaborative tools in one place.
-- **Privacy First**: Your ideas are secure, always.
-- **Open Source**: Accessible, community-driven, and transparent.
-- **Offline-First Support**: Access and edit your notes anytime, anywhere, even without an internet connection.
-
-Join us in reshaping how ideas are captured and shared. Let your creativity soar with ZephyrVault.
+Licensed under the **MIT License**. See [LICENSE](./LICENSE) for details.
 
 ---
 
-## 💬 **Feedback & Support**
+## 💬 **Feedback & Contributions**
+We welcome ideas, bugs, or feature suggestions:  
+- Submit issues via GitHub.  
+- Fork, contribute, and grow ZephyrVault with us!  
 
-Have questions, suggestions, or bug reports?
+---
 
-- Open an issue in this repository.
-
-Together, let’s redefine note-taking. 🚀
+**ZephyrVault** — Secure, AI-powered, and offline-ready. Redefine note-taking your way. 🚀
