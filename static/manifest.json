@@ -1,0 +1,15 @@
+{
+	"name": "ZephyrVault",
+	"short_name": "Zevy",
+	"description": "Your ultimate note-taking and idea management platform.",
+	"icons": [
+		{ "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+		{ "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+	],
+	"start_url": "/app",
+	"display": "standalone",
+	"background_color": "#e3f2fd",
+	"theme_color": "#007bff",
+	"scope": "/app",
+	"version": "1.0.0"
+}
