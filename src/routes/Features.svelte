@@ -1,44 +1,49 @@
 <script lang="ts">
 	import FeatureItem from './FeatureItem.svelte';
+	import { Cloud, HardDrive, Key, MonitorSmartphone, Shield, Users } from 'lucide-svelte';
 
-	type IconName = 'Lock' | 'WifiOff' | 'Cloud' | 'Users' | 'Shield' | 'Laptop';
-	type FeatureItems = { icon: IconName; title: string; description: string };
+	type FeatureItems = {
+		icon: any;
+		title: string;
+		description: string;
+	};
+
 	const features: FeatureItems[] = [
 		{
-			icon: 'Lock',
-			title: 'Encrypted Notes',
+			icon: Key,
+			title: 'Keep Your Notes Private',
 			description:
-				'Keep your notes private with end-to-end encryption, ensuring only you can access your data.'
+				'End-to-end encryption ensures only you can access your data. Your notes are secure, no matter where you are.'
 		},
 		{
-			icon: 'WifiOff',
-			title: 'Offline-First',
+			icon: HardDrive,
+			title: 'Take Notes Anytime, Anywhere',
 			description:
-				"Take notes anytime, anywhere—even without an internet connection. Your data syncs automatically when you're back online."
+				'Create and edit notes offline. Your data syncs automatically when you’re back online.'
 		},
 		{
-			icon: 'Cloud',
-			title: 'Cloud Sync',
+			icon: Cloud,
+			title: 'Seamless Access Across Devices',
 			description:
-				'Access your notes seamlessly across all your devices with secure cloud synchronization.'
+				'Access your notes on any device, anytime. ZephyrVault syncs your data securely in the cloud.'
 		},
 		{
-			icon: 'Users',
-			title: 'Collaboration',
+			icon: Users,
+			title: 'Collaborate in Real-Time',
 			description:
-				'Share notes with your team and collaborate in real-time for enhanced productivity.'
+				'Share notes with your team and collaborate seamlessly. Manage permissions and track changes effortlessly.'
 		},
 		{
-			icon: 'Shield',
-			title: 'Zero-Knowledge Security',
+			icon: Shield,
+			title: 'Your Data, Your Privacy',
 			description:
-				'Your data is stored securely with zero-knowledge architecture, meaning no one but you can read your notes.'
+				'With zero-knowledge architecture, no one but you can read your notes. Your data is safe and secure.'
 		},
 		{
-			icon: 'Laptop',
-			title: 'Cross-Platform Support',
+			icon: MonitorSmartphone,
+			title: 'Use Anywhere, Anytime',
 			description:
-				'Use ZephyrVault on any device—desktop, tablet, or smartphone—for ultimate flexibility and accessibility.'
+				'ZephyrVault is available on desktop, tablet, and smartphone. Your notes are always with you.'
 		}
 	];
 </script>
