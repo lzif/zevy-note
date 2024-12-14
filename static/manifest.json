@@ -1,6 +1,6 @@
 {
-	"name": "ZephyrVault",
-	"short_name": "Zevy",
+	"name": "ZephyrVault Notes",
+	"short_name": "Zephyr Notes",
 	"description": "Your ultimate note-taking and idea management platform.",
 	"icons": [
 		{ "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
