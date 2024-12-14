@@ -23,6 +23,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-node": "^5.2.10",
 		"@sveltejs/kit": "^2.9.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@types/eslint": "^9.6.0",
@@ -47,6 +48,7 @@
 		"@xata.io/client": "0.0.0-next.va121e4207b94bfe0a3c025fc00b247b923880930",
 		"@xata.io/kysely": "^0.2.1",
 		"better-auth": "^1.0.14",
+		"express": "^4.21.2",
 		"kysely": "^0.27.5",
 		"lucide-svelte": "^0.468.0"
 	},
