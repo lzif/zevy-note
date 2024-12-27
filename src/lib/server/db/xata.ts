@@ -348,7 +348,7 @@ export type DatabaseSchema = {
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
-	databaseURL: 'https://Ryuki-Kazuchi-s-workspace-gko5ru.us-east-1.xata.sh/db/ZephyrVault'
+	databaseURL: 'https://Ryuki-Kazuchi-s-workspace-gko5ru.us-east-1.xata.sh/db/ZevyNote'
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {

@@ -1,4 +1,4 @@
-# TODO List for ZephyrVault
+# TODO List for ZevyNote
 
 This document outlines detailed tasks for each phase of development.
 

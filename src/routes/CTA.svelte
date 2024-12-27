@@ -1,8 +1,8 @@
 <section class="bg-sky-600 text-white py-16">
 	<div class="container mx-auto px-6 md:px-12 text-center">
-		<h3 class="text-3xl md:text-4xl font-bold mb-4">Empower Your Productivity with ZephyrVault</h3>
+		<h3 class="text-3xl md:text-4xl font-bold mb-4">Empower Your Productivity with ZevyNote</h3>
 		<p class="text-lg mb-6">
-			Experience the freedom of secure, offline-first note-taking. Start organizing your ideas with ZephyrVault today—it’s free and easy to use!
+			Experience the freedom of secure, offline-first note-taking. Start organizing your ideas with ZevyNote today—it’s free and easy to use!
 		</p>
 		<div class="flex flex-col sm:flex-row justify-center gap-4">
 			<a

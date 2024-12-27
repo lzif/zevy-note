@@ -1,7 +1,7 @@
 {
 	"name": "zephyrvault",
 	"version": "0.0.2",
-	"description": "ZephyrVault is a secure, blazing-fast, and feature-rich note-taking app with encryption and collaboration built using SvelteKit.",
+	"description": "ZevyNote is a secure, blazing-fast, and feature-rich note-taking app with encryption and collaboration built using SvelteKit.",
 	"type": "module",
 	"repository": {
 		"type": "git",
@@ -27,6 +27,7 @@
 		"@sveltejs/kit": "^2.9.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@types/eslint": "^9.6.0",
+		"@types/lunr": "^2.3.7",
 		"@vite-pwa/sveltekit": "^0.6.6",
 		"autoprefixer": "^10.4.20",
 		"eslint": "^9.7.0",
@@ -46,10 +47,15 @@
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.9",
 		"@tailwindcss/typography": "^0.5.15",
+		"@tiptap/core": "^2.10.4",
+		"@tiptap/pm": "^2.10.4",
+		"@tiptap/starter-kit": "^2.10.4",
 		"@xata.io/client": "0.0.0-next.va121e4207b94bfe0a3c025fc00b247b923880930",
 		"@xata.io/kysely": "^0.2.1",
 		"better-auth": "^1.0.14",
 		"express": "^4.21.2",
+		"flexsearch": "^0.7.43",
+		"idb": "^8.0.0",
 		"kysely": "^0.27.5",
 		"lucide-svelte": "^0.468.0"
 	},

@@ -1,6 +1,6 @@
-# **ZephyrVault**
+# **ZevyNote**
 
-**ZephyrVault** is your ultimate note-taking platform—**offline-first**, secure, and designed for productivity. Whether you’re a student, creative, or developer, your ideas flow freely while staying locked in your vault.
+**ZevyNote** is your ultimate note-taking platform—**offline-first**, secure, and designed for productivity. Whether you’re a student, creative, or developer, your ideas flow freely while staying locked in your vault.
 
 ---
 
@@ -24,7 +24,7 @@
 
 ### 🔗 **API Integration & Automation**
 
-- Integrate ZephyrVault into your workflow with a **public API**.
+- Integrate ZevyNote into your workflow with a **public API**.
 - Automate note creation, updates, and bulk exports programmatically.
 
 ### 🎨 **Customization & Themes**
@@ -133,8 +133,8 @@ Licensed under the **MIT License**. See [LICENSE](./LICENSE) for details.
 ## 💬 **Feedback & Contributions**
 We welcome ideas, bugs, or feature suggestions:  
 - Submit issues via GitHub.  
-- Fork, contribute, and grow ZephyrVault with us!  
+- Fork, contribute, and grow ZevyNote with us!  
 
 ---
 
-**ZephyrVault** — Secure, AI-powered, and offline-ready. Redefine note-taking your way. 🚀
+**ZevyNote** — Secure, AI-powered, and offline-ready. Redefine note-taking your way. 🚀
