@@ -1,4 +1,9 @@
 /// <reference types="@sveltejs/kit" />
+/// <reference no-default-lib="true"/>
+/// <reference lib="esnext" />
+/// <reference lib="webworker" />
+
+const sw = self as unknown as ServiceWorkerGlobalScope;
 
 // @ts-nocheck
 import { build, files, prerendered, version } from '$service-worker';
@@ -11,7 +16,7 @@ const ASSETS = [
   ...prerendered
 ];
 
-self.addEventListener('install', (event) => {
+sw.addEventListener('install', (event) => {
   async function addFilesToCache() {
     const cache = await caches.open(CACHE);
     await cache.addAll(ASSETS);
@@ -20,7 +25,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(addFilesToCache());
 });
 
-self.addEventListener('activate', (event) => {
+sw.addEventListener('activate', (event) => {
   async function deleteOldCaches() {
     for (const key of await caches.keys()) {
       if (key !== CACHE) await caches.delete(key);
@@ -30,29 +35,43 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(deleteOldCaches());
 });
 
-self.addEventListener('fetch', (event) => {
+sw.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
   async function respond() {
-    const url = new URL(event.request.url);
-    const cache = await caches.open(CACHE);
+		const url = new URL(event.request.url);
+		const cache = await caches.open(CACHE);
 
-    if (ASSETS.includes(url.pathname)) {
-      return cache.match(url.pathname);
-    }
+		if (ASSETS.includes(url.pathname)) {
+			const response = await cache.match(url.pathname);
 
-    try {
-      const response = await fetch(event.request);
+			if (response) {
+				return response;
+			}
+		}
 
-      if (response.status === 200) {
-        cache.put(event.request, response.clone());
-      }
+		try {
+			const response = await fetch(event.request);
 
-      return response;
-    } catch {
-      return cache.match(event.request);
-    }
-  }
+			if (!(response instanceof Response)) {
+				throw new Error('invalid response from fetch');
+			}
+
+			if (response.status === 200) {
+				cache.put(event.request, response.clone());
+			}
+
+			return response;
+		} catch (err) {
+			const response = await cache.match(event.request);
+
+			if (response) {
+				return response;
+			}
+
+			throw err;
+		}
+	}
 
   event.respondWith(respond());
 });
