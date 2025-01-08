@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_6c1edcb12d8f8b",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE app_user (id serial PRIMARY KEY, username text NOT NULL UNIQUE)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_6c1edcb12d8f8b",
+  "parent": "mig_ctnmqet7965n01fhu40g",
+  "schema": "public",
+  "startedAt": "2024-12-28T03:17:49.407928Z"
+}

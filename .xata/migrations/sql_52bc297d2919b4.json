@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_52bc297d2919b4",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE user_session (id text NOT NULL PRIMARY KEY, user_id int NOT NULL REFERENCES app_user (id), expires_at timestamptz NOT NULL)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_52bc297d2919b4",
+  "parent": "sql_6c1edcb12d8f8b",
+  "schema": "public",
+  "startedAt": "2024-12-28T03:17:50.986169Z"
+}

@@ -52,7 +52,6 @@
 		"@tiptap/starter-kit": "^2.10.4",
 		"@xata.io/client": "0.0.0-next.va121e4207b94bfe0a3c025fc00b247b923880930",
 		"@xata.io/kysely": "^0.2.1",
-		"better-auth": "^1.0.14",
 		"express": "^4.21.2",
 		"flexsearch": "^0.7.43",
 		"idb": "^8.0.0",
